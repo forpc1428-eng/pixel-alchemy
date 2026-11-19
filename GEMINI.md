@@ -1,5 +1,5 @@
-# GEMINI.md — Ultra Forge
+# GEMINI.md — Pixel Alchemy
 
-Follow [`START_HERE.md`](START_HERE.md) and [`AGENTS.md`](AGENTS.md). Read `skills/ultra-forge/SKILL.md` first, then the other
+Follow [`START_HERE.md`](START_HERE.md) and [`AGENTS.md`](AGENTS.md). Read `skills/pixel-alchemy/SKILL.md` first, then the other
 skills the task needs (or `MASTER_PROMPT.md`, which contains all of them). Build from `site/` (edit `site/config.js` first),
 default Ultra Level 1000, verify with `python3 scripts/check.py site`, ship with the GitHub Actions workflows.

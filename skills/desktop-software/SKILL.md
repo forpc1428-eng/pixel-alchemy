@@ -1,6 +1,6 @@
 ---
 name: desktop-software
-description: Building real desktop software (Windows .exe/installer, macOS .dmg, Linux AppImage) from an Ultra Forge web build or a new app — Electron with electron-builder via GitHub Actions, Tauri as a lightweight alternative, native menus, auto-update, code signing. Use when the user asks for software, a desktop app, an .exe, an installer, a Mac app, or "make it run on PC without a browser".
+description: Building real desktop software (Windows .exe/installer, macOS .dmg, Linux AppImage) from an Pixel Alchemy web build or a new app — Electron with electron-builder via GitHub Actions, Tauri as a lightweight alternative, native menus, auto-update, code signing. Use when the user asks for software, a desktop app, an .exe, an installer, a Mac app, or "make it run on PC without a browser".
 ---
 
 # Desktop software

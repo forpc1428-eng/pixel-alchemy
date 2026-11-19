@@ -1,8 +1,8 @@
-# ⚒️ Ultra Forge
+# ⚒️ Pixel Alchemy
 
 **Give this repo's link to any AI and say "install everything and build my site/app" — and it knows exactly what to do.**
 
-Ultra Forge is a universal skill pack and a working template for building **ultra-premium websites, web apps, Android APKs,
+Pixel Alchemy is a universal skill pack and a working template for building **ultra-premium websites, web apps, Android APKs,
 desktop software, real-time 3D scenes and animations** in one go: concept → design → colour → typography → motion → 3D →
 code → APK/installers → deploy → GitHub. Every build defaults to **Ultra Level 1000** (the top of a 1–1000 quality scale).
 
@@ -20,7 +20,7 @@ code → APK/installers → deploy → GitHub. Every build defaults to **Ultra L
 
 ## 1. The one prompt (copy → paste into any AI)
 
-> Read https://github.com/forpc1428-eng/ultra-forge — start with START_HERE.md. Install all the skills and everything
+> Read https://github.com/forpc1428-eng/pixel-alchemy — start with START_HERE.md. Install all the skills and everything
 > exactly as it says, then build my **[portfolio / website / app / APK / desktop app]** at Ultra Level 1000.
 > My name: … · Role: … · Email: … · Projects: … · Style/colours (optional): … · Reference site (optional): …
 
@@ -28,7 +28,7 @@ code → APK/installers → deploy → GitHub. Every build defaults to **Ultra L
   installer and build.
 - **ChatGPT / Gemini / Claude.ai / Grok (chat)** → they read `MASTER_PROMPT.md` + the template and give you complete files.
   If they can't open links, upload `MASTER_PROMPT.md` to the chat.
-- **Claude Code plugin**: `/plugin marketplace add forpc1428-eng/ultra-forge` → `/plugin install ultra-forge@ultra-forge`
+- **Claude Code plugin**: `/plugin marketplace add forpc1428-eng/pixel-alchemy` → `/plugin install pixel-alchemy@pixel-alchemy`
 
 ## 2. Use it from your phone only 📱 (no PC)
 
@@ -44,8 +44,8 @@ Full git on Android (Termux), iPhone (Working Copy), Codespaces and more: [`skil
 ## 3. Use it on a PC 💻
 
 ```bash
-git clone https://github.com/forpc1428-eng/ultra-forge.git
-cd ultra-forge
+git clone https://github.com/forpc1428-eng/pixel-alchemy.git
+cd pixel-alchemy
 ./scripts/install.sh                 # installs the skills for Claude Code (Windows: .\scripts\install.ps1)
 python3 scripts/serve.py             # preview → http://localhost:8080  (phone on same Wi-Fi: the printed IP)
 ```
@@ -83,12 +83,12 @@ Levels → [`skills/ultra-levels`](skills/ultra-levels/SKILL.md).
 ## 6. What's inside
 
 ```
-ultra-forge/
+pixel-alchemy/
 ├── START_HERE.md            ← every AI reads this first
 ├── MASTER_PROMPT.md         ← all skills in one file (chat AIs)
 ├── AGENTS.md CLAUDE.md GEMINI.md .windsurfrules .cursor/ .github/copilot-instructions.md llms.txt
 ├── .claude-plugin/          ← Claude Code plugin + marketplace
-├── skills/  (22)            ← ultra-forge, ultra-levels, art-direction, color-system, typography, layout-composition,
+├── skills/  (22)            ← pixel-alchemy, ultra-levels, art-direction, color-system, typography, layout-composition,
 │                              motion-animation, webgl-3d, scroll-storytelling, ui-interaction, content-copy,
 │                              web-app-stack, android-apk, desktop-software, video-animation, performance,
 │                              responsive-mobile, accessibility-seo, assets-pipeline, deploy-hosting,
@@ -106,7 +106,7 @@ ultra-forge/
 
 ## 7. FAQ
 
-**Will every AI produce the exact same result?** No instruction file can guarantee that — models differ. Ultra Forge gets
+**Will every AI produce the exact same result?** No instruction file can guarantee that — models differ. Pixel Alchemy gets
 as close as possible by shipping *working, tested code* plus exact recipes and a checklist, so the AI adapts a proven
 engine instead of improvising. Agents that can run the site and look at screenshots (Claude Code, Codex, Cursor agent)
 give the best results.

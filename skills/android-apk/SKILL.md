@@ -1,6 +1,6 @@
 ---
 name: android-apk
-description: Turning any Ultra Forge website or web app into an installable Android app — PWA install, Capacitor-wrapped APK/AAB built automatically by GitHub Actions (works from a phone), app icons/splash, signing keystores, Play Store upload, and TWA alternative. Use when the user asks for an APK, Android app, mobile app, Play Store, "install on my phone", or app from a website.
+description: Turning any Pixel Alchemy website or web app into an installable Android app — PWA install, Capacitor-wrapped APK/AAB built automatically by GitHub Actions (works from a phone), app icons/splash, signing keystores, Play Store upload, and TWA alternative. Use when the user asks for an APK, Android app, mobile app, Play Store, "install on my phone", or app from a website.
 ---
 
 # Android APK

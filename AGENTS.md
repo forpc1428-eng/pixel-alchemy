@@ -1,10 +1,10 @@
-# AGENTS.md — Ultra Forge
+# AGENTS.md — Pixel Alchemy
 
 Read automatically by Codex, Cursor, Jules, Aider, Gemini CLI, Copilot agents, Windsurf, Cline, Zed, Replit and others.
 **Full instructions: [`START_HERE.md`](START_HERE.md). Follow it.**
 
 ## Quick contract
-1. Read `skills/ultra-forge/SKILL.md` (director) + `skills/ultra-levels/SKILL.md` first. Default level **1000**.
+1. Read `skills/pixel-alchemy/SKILL.md` (director) + `skills/ultra-levels/SKILL.md` first. Default level **1000**.
 2. Read every skill in `skills/` the task touches (all 22 for a full build). Each is a `SKILL.md` with a `description`
    saying when to use it.
 3. Build from `site/` (working template). Edit `site/config.js` first. Scenes in `site/js/engine.js`, UI in `site/js/main.js`,

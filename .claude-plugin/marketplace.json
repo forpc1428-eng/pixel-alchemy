@@ -1,9 +1,9 @@
 {
-  "name": "ultra-forge",
+  "name": "pixel-alchemy",
   "owner": { "name": "forpc1428-eng" },
   "plugins": [
     {
-      "name": "ultra-forge",
+      "name": "pixel-alchemy",
       "source": "./",
       "description": "Build cinematic websites, web apps, Android APKs, desktop software, 3D scenes and animations at Ultra Level 1000 — design to deploy."
     }

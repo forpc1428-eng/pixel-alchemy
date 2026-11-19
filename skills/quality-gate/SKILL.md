@@ -1,6 +1,6 @@
 ---
 name: quality-gate
-description: Final verification for every Ultra Forge build — automated checks (scripts/check.py), screenshots at multiple scroll points on desktop and phone, correctness, visual quality, motion continuity, framing, accessibility, performance numbers, packaging, licences, secrets and an honest hand-off. Use at the end of every build or change and whenever asked "is it perfect / ready / check everything".
+description: Final verification for every Pixel Alchemy build — automated checks (scripts/check.py), screenshots at multiple scroll points on desktop and phone, correctness, visual quality, motion continuity, framing, accessibility, performance numbers, packaging, licences, secrets and an honest hand-off. Use at the end of every build or change and whenever asked "is it perfect / ready / check everything".
 ---
 
 # Quality gate — nothing ships until every box is ticked

@@ -1,5 +1,5 @@
 {
- "about": "40 tested Ultra Forge palettes. Copy `palette` into site/config.js; `scene` is the recommended scene. All text tokens pass WCAG AA (>=4.5:1) on bg.",
+ "about": "40 tested Pixel Alchemy palettes. Copy `palette` into site/config.js; `scene` is the recommended scene. All text tokens pass WCAG AA (>=4.5:1) on bg.",
  "palettes": [
   {
    "id": "event-horizon",

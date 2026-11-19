@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Create a new Ultra Forge project folder with everything (template, AI rules, workflows, packaging).
+# Create a new Pixel Alchemy project folder with everything (template, AI rules, workflows, packaging).
 #   ./scripts/new-project.sh ~/projects/my-portfolio
 set -euo pipefail
 [ $# -ge 1 ] || { echo "usage: $0 <new-project-dir>"; exit 1; }

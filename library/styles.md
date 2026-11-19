@@ -1,4 +1,4 @@
-# Ultra Forge — Style catalog (30 art directions)
+# Pixel Alchemy — Style catalog (30 art directions)
 
 Each direction = concept · scene · palette id (`palettes.json`) · type style · motion feel · signature moment.
 Pick one, set `scene`, `palette`, `typeStyle` in `site/config.js`, then write copy in the same voice.

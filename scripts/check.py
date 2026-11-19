@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Ultra Forge automated quality gate.  Usage: python scripts/check.py [site_dir]
+"""Pixel Alchemy automated quality gate.  Usage: python scripts/check.py [site_dir]
 Checks files, references, JSON, budgets, SEO basics, placeholders, secrets, and skill frontmatter.
 Exit code 1 if any FAIL. WARNs are things to fix or mention in the hand-off."""
 import json, os, re, sys

@@ -4,19 +4,19 @@ Usage: python scripts/build-master-prompt.py         (write)
        python scripts/build-master-prompt.py --check (CI: fail if out of date)"""
 import os, re, sys
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-ORDER = ['ultra-forge', 'ultra-levels', 'art-direction', 'color-system', 'typography', 'layout-composition', 'motion-animation',
+ORDER = ['pixel-alchemy', 'ultra-levels', 'art-direction', 'color-system', 'typography', 'layout-composition', 'motion-animation',
          'webgl-3d', 'scroll-storytelling', 'ui-interaction', 'content-copy', 'web-app-stack', 'android-apk', 'desktop-software',
          'video-animation', 'performance', 'responsive-mobile', 'accessibility-seo', 'assets-pipeline', 'deploy-hosting',
          'github-anywhere', 'quality-gate']
 skills = sorted(os.listdir(os.path.join(ROOT, 'skills')), key=lambda s: ORDER.index(s) if s in ORDER else 99)
-parts = ["""# ULTRA FORGE — MASTER PROMPT (all skills in one file)
+parts = ["""# PIXEL ALCHEMY — MASTER PROMPT (all skills in one file)
 
 > Paste or upload this whole file into any AI chat, then say what you want, e.g.
-> "Using Ultra Forge at Level 1000, build my portfolio: name …, role …, email …, projects …".
+> "Using Pixel Alchemy at Level 1000, build my portfolio: name …, role …, email …, projects …".
 > Repo with the working template, APK/desktop builders and installers: see README.md.
 
 ## How you (the AI) must work
-1. Follow the **ultra-forge** director workflow below, at **Level 1000** unless told otherwise.
+1. Follow the **pixel-alchemy** director workflow below, at **Level 1000** unless told otherwise.
 2. If you can read the repo: start from `site/` (complete working template) and edit `site/config.js` first.
    If you cannot read the repo: produce complete files (index.html, css/style.css, js/engine.js, js/main.js, config.js)
    following these skills exactly — never partial snippets, never "rest stays the same".

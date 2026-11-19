@@ -1,10 +1,10 @@
 ---
-description: Ultra Forge — build ultra-premium websites, apps, APKs, desktop software, 3D and animation
+description: Pixel Alchemy — build ultra-premium websites, apps, APKs, desktop software, 3D and animation
 globs:
 alwaysApply: true
 ---
 Follow START_HERE.md and AGENTS.md in the repo root.
-1. Read skills/ultra-forge/SKILL.md and skills/ultra-levels/SKILL.md first (default Level 1000), then every skill the task touches.
+1. Read skills/pixel-alchemy/SKILL.md and skills/ultra-levels/SKILL.md first (default Level 1000), then every skill the task touches.
 2. Build from site/ — edit site/config.js first; scenes in site/js/engine.js; UI in site/js/main.js; tokens in site/css/style.css.
 3. Preview with `python3 scripts/serve.py`; debug ?scene= ?u= ?m=1 ?level=.
 4. Verify with `python3 scripts/check.py site` and the skills/quality-gate checklist before finishing.

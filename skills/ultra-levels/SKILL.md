@@ -1,6 +1,6 @@
 ---
 name: ultra-levels
-description: The Ultra Forge quality scale from Level 1 to Level 1000 (ten tiers of 100) that defines exactly which design, motion, 3D, performance, accessibility, packaging and shipping features are mandatory for a build. Use whenever the user mentions a level, "ultra", "max", "1000", "super high graphics", "best possible", "basic/simple version", or when deciding how far to take a build. Default is Level 1000.
+description: The Pixel Alchemy quality scale from Level 1 to Level 1000 (ten tiers of 100) that defines exactly which design, motion, 3D, performance, accessibility, packaging and shipping features are mandatory for a build. Use whenever the user mentions a level, "ultra", "max", "1000", "super high graphics", "best possible", "basic/simple version", or when deciding how far to take a build. Default is Level 1000.
 ---
 
 # Ultra Levels (1 → 1000)

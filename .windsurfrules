@@ -1,3 +1,3 @@
-Ultra Forge project. Follow START_HERE.md and AGENTS.md. Read skills/ultra-forge/SKILL.md first, then the skills the task needs.
+Pixel Alchemy project. Follow START_HERE.md and AGENTS.md. Read skills/pixel-alchemy/SKILL.md first, then the skills the task needs.
 Build from site/ (edit site/config.js first). Default Ultra Level 1000. Verify with `python3 scripts/check.py site` and
 screenshots (desktop 1280x760, phone 375x812). Never commit secrets.

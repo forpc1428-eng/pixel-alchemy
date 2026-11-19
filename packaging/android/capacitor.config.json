@@ -1,6 +1,6 @@
 {
-  "appId": "com.ultraforge.app",
-  "appName": "Ultra Forge",
+  "appId": "com.pixelalchemy.app",
+  "appName": "Pixel Alchemy",
   "webDir": "www",
   "backgroundColor": "#000000",
   "android": {

@@ -1,5 +1,5 @@
 /* ═════════════════════════════════════════════════════════════════════════════
-   ULTRA FORGE — page orchestration. Reads window.FORGE (config.js), builds the DOM,
+   PIXEL ALCHEMY — page orchestration. Reads window.FORGE (config.js), builds the DOM,
    drives the 3D engine from scroll, and runs every micro-interaction.
    You rarely need to edit this file — edit config.js instead.
    ═══════════════════════════════════════════════════════════════════════════ */
