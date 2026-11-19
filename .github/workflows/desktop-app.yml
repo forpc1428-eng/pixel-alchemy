@@ -1,0 +1,50 @@
+# Builds desktop apps from site/ with Electron: Windows (.exe installer + portable), macOS (.dmg), Linux (.AppImage).
+# Trigger: Actions → "Build Desktop Apps" → Run workflow, or push a tag like v1.0.0 (files attach to the Release).
+name: Build Desktop Apps
+on:
+  workflow_dispatch:
+  push:
+    tags: ['v*']
+permissions:
+  contents: write
+jobs:
+  build:
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - os: windows-latest
+            name: windows
+            files: packaging/desktop/dist/*.exe
+          - os: macos-latest
+            name: macos
+            files: packaging/desktop/dist/*.dmg
+          - os: ubuntu-latest
+            name: linux
+            files: packaging/desktop/dist/*.AppImage
+    runs-on: ${{ matrix.os }}
+    defaults:
+      run:
+        shell: bash
+        working-directory: packaging/desktop
+    env:
+      CSC_IDENTITY_AUTO_DISCOVERY: 'false'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: npm install
+      - name: Icon
+        run: mkdir -p build && cp ../../site/icons/icon-512.png build/icon.png
+      - name: Build
+        run: npm run dist
+      - uses: actions/upload-artifact@v4
+        with:
+          name: omni-desktop-${{ matrix.name }}
+          path: ${{ matrix.files }}
+      - name: Attach to GitHub Release (tags only)
+        if: startsWith(github.ref, 'refs/tags/')
+        uses: softprops/action-gh-release@v2
+        with:
+          files: ${{ matrix.files }}

@@ -1,0 +1,10 @@
+{
+  "appId": "com.omniforge.app",
+  "appName": "Omni Forge",
+  "webDir": "www",
+  "backgroundColor": "#000000",
+  "android": {
+    "backgroundColor": "#000000",
+    "allowMixedContent": false
+  }
+}

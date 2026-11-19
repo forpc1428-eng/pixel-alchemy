@@ -1,0 +1,10 @@
+{
+  "name": "omni-forge",
+  "version": "1.0.0",
+  "description": "Universal ultra-premium build kit: 22 skills (Ultra Levels 1-1000, art direction, colour, type, motion, WebGL/3D, scroll storytelling, UI, full-stack, Android APK, desktop software, video, performance, a11y/SEO, deploy, GitHub from phone/PC, quality gate) + a working cinematic website template.",
+  "author": { "name": "forpc1428-eng" },
+  "homepage": "https://github.com/forpc1428-eng/omni-forge",
+  "repository": "https://github.com/forpc1428-eng/omni-forge",
+  "license": "MIT",
+  "keywords": ["website", "3d", "webgl", "animation", "apk", "android", "desktop", "electron", "design", "ui-ux", "portfolio", "skills"]
+}

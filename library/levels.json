@@ -1,0 +1,169 @@
+{
+ "default": 1000,
+ "tiers": [
+  {
+   "tier": 1,
+   "range": [
+    1,
+    100
+   ],
+   "name": "Clean",
+   "adds": [
+    "semantic HTML",
+    "responsive",
+    "font pair",
+    "6-token palette",
+    "16px+ body",
+    "title/description"
+   ]
+  },
+  {
+   "tier": 2,
+   "range": [
+    101,
+    200
+   ],
+   "name": "Designed",
+   "adds": [
+    "8pt spacing",
+    "fluid type scale",
+    "grid",
+    "consistent radii/lines",
+    "hover/focus states",
+    "favicon",
+    "OG image"
+   ]
+  },
+  {
+   "tier": 3,
+   "range": [
+    201,
+    300
+   ],
+   "name": "Animated",
+   "adds": [
+    "reveal on scroll + stagger",
+    "eased transitions",
+    "loader",
+    "smooth anchors",
+    "reduced-motion"
+   ]
+  },
+  {
+   "tier": 4,
+   "range": [
+    301,
+    400
+   ],
+   "name": "Immersive",
+   "adds": [
+    "real-time WebGL scene",
+    "scroll-linked progress",
+    "pointer parallax",
+    "no-WebGL fallback"
+   ]
+  },
+  {
+   "tier": 5,
+   "range": [
+    401,
+    500
+   ],
+   "name": "App-grade",
+   "adds": [
+    "PWA manifest+SW+icons",
+    "offline",
+    "installable",
+    "toasts",
+    "magnetic CTAs",
+    "card tilt"
+   ]
+  },
+  {
+   "tier": 6,
+   "range": [
+    501,
+    600
+   ],
+   "name": "Studio",
+   "adds": [
+    "custom cursor",
+    "split-text hero",
+    "marquee",
+    "counters",
+    "live HUD",
+    "section-aware nav"
+   ]
+  },
+  {
+   "tier": 7,
+   "range": [
+    601,
+    700
+   ],
+   "name": "Cinematic",
+   "adds": [
+    "story treatment 3-6 beats",
+    "camera choreography",
+    "dynamic resolution",
+    "ACES",
+    "dither",
+    "grain"
+   ]
+  },
+  {
+   "tier": 8,
+   "range": [
+    701,
+    800
+   ],
+   "name": "Production",
+   "adds": [
+    "Lighthouse>=95",
+    "WCAG 2.2 AA",
+    "JSON-LD",
+    "sitemap/robots",
+    "security headers",
+    "cache headers"
+   ]
+  },
+  {
+   "tier": 9,
+   "range": [
+    801,
+    900
+   ],
+   "name": "Shipped everywhere",
+   "adds": [
+    "live deploy",
+    "GitHub repo",
+    "CI checks",
+    "Android APK",
+    "desktop installers",
+    "user README"
+   ]
+  },
+  {
+   "tier": 10,
+   "range": [
+    901,
+    1000
+   ],
+   "name": "Award / Ultra",
+   "adds": [
+    "signature idea",
+    "bespoke shader/model",
+    "screenshot-tested >=6 points desktop+phone",
+    "zero console errors",
+    "full quality gate",
+    "promo video if asked"
+   ]
+  }
+ ],
+ "runtime_switches": {
+  "<300": "CSS gradient instead of WebGL",
+  ">=400": "service worker",
+  ">=500": "magnetic + tilt",
+  ">=600": "custom cursor"
+ }
+}

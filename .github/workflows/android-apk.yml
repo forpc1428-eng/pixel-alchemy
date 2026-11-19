@@ -1,0 +1,73 @@
+# Builds an Android APK from site/ with Capacitor. Works entirely in the cloud — trigger it from your phone:
+# Actions → "Build Android APK" → Run workflow. Download from the run's Artifacts (or the Release for v* tags).
+# Optional signing secrets: ANDROID_KEYSTORE_BASE64, ANDROID_KEYSTORE_PASSWORD, ANDROID_KEY_ALIAS, ANDROID_KEY_PASSWORD
+name: Build Android APK
+on:
+  workflow_dispatch:
+  push:
+    tags: ['v*']
+permissions:
+  contents: write
+jobs:
+  apk:
+    runs-on: ubuntu-latest
+    env:
+      KS: ${{ secrets.ANDROID_KEYSTORE_BASE64 }}
+      KSP: ${{ secrets.ANDROID_KEYSTORE_PASSWORD }}
+      KA: ${{ secrets.ANDROID_KEY_ALIAS }}
+      KP: ${{ secrets.ANDROID_KEY_PASSWORD }}
+    defaults:
+      run:
+        working-directory: packaging/android
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 21
+      - name: Install Capacitor
+        run: npm install
+      - name: Copy website into the app
+        run: npm run prepare-web
+      - name: Create Android project
+        run: npx cap add android
+      - name: App icons & splash (from site/icons/icon-512.png)
+        continue-on-error: true
+        run: |
+          mkdir -p assets
+          cp ../../site/icons/icon-512.png assets/logo.png
+          npx @capacitor/assets generate --android --iconBackgroundColor '#000000' --iconBackgroundColorDark '#000000' --splashBackgroundColor '#000000' --splashBackgroundColorDark '#000000'
+      - name: Sync
+        run: npx cap sync android
+      - name: Build debug APK
+        run: |
+          chmod +x android/gradlew
+          cd android && ./gradlew assembleDebug --no-daemon
+      - name: Build signed release APK + AAB (only when signing secrets exist)
+        if: env.KS != ''
+        run: |
+          echo "$KS" | base64 -d > android/app/release.jks
+          cd android && ./gradlew assembleRelease bundleRelease --no-daemon \
+            -Pandroid.injected.signing.store.file="$PWD/app/release.jks" \
+            -Pandroid.injected.signing.store.password="$KSP" \
+            -Pandroid.injected.signing.key.alias="$KA" \
+            -Pandroid.injected.signing.key.password="$KP"
+      - name: Collect outputs
+        run: |
+          mkdir -p out
+          cp android/app/build/outputs/apk/debug/app-debug.apk out/omni-forge-debug.apk
+          cp android/app/build/outputs/apk/release/*.apk out/ 2>/dev/null || true
+          cp android/app/build/outputs/bundle/release/*.aab out/ 2>/dev/null || true
+          ls -la out
+      - uses: actions/upload-artifact@v4
+        with:
+          name: omni-android-apk
+          path: packaging/android/out/*
+      - name: Attach to GitHub Release (tags only)
+        if: startsWith(github.ref, 'refs/tags/')
+        uses: softprops/action-gh-release@v2
+        with:
+          files: packaging/android/out/*

@@ -1,0 +1,765 @@
+{
+ "about": "40 tested Omni Forge palettes. Copy `palette` into site/config.js; `scene` is the recommended scene. All text tokens pass WCAG AA (>=4.5:1) on bg.",
+ "palettes": [
+  {
+   "id": "event-horizon",
+   "name": "Event Horizon",
+   "scene": "blackhole",
+   "mood": "warm space, scientific",
+   "palette": {
+    "bg": "#030305",
+    "ink": "#ecebe6",
+    "muted": "#8d8b86",
+    "accent": "#ffb46b",
+    "glow": "#ff7a2f",
+    "cool": "#6f8cff"
+   },
+   "contrast": {
+    "ink": 17.3,
+    "muted": 6.1,
+    "accent": 11.8
+   }
+  },
+  {
+   "id": "interstellar-gold",
+   "name": "Interstellar Gold",
+   "scene": "blackhole",
+   "mood": "film, epic",
+   "palette": {
+    "bg": "#020203",
+    "ink": "#f2ede4",
+    "muted": "#948d82",
+    "accent": "#f5c37a",
+    "glow": "#ffb347",
+    "cool": "#8aa7ff"
+   },
+   "contrast": {
+    "ink": 17.8,
+    "muted": 6.3,
+    "accent": 12.8
+   }
+  },
+  {
+   "id": "blue-giant",
+   "name": "Blue Giant",
+   "scene": "blackhole",
+   "mood": "cold, hot star",
+   "palette": {
+    "bg": "#02030a",
+    "ink": "#e8eefc",
+    "muted": "#8a93a8",
+    "accent": "#8fb5ff",
+    "glow": "#9cc4ff",
+    "cool": "#ff9a5c"
+   },
+   "contrast": {
+    "ink": 17.7,
+    "muted": 6.7,
+    "accent": 10.0
+   }
+  },
+  {
+   "id": "crimson-singularity",
+   "name": "Crimson Singularity",
+   "scene": "blackhole",
+   "mood": "dramatic, red",
+   "palette": {
+    "bg": "#050203",
+    "ink": "#f1e8e6",
+    "muted": "#968a88",
+    "accent": "#ff7b6b",
+    "glow": "#ff3b2f",
+    "cool": "#5b7cff"
+   },
+   "contrast": {
+    "ink": 17.1,
+    "muted": 6.2,
+    "accent": 8.2
+   }
+  },
+  {
+   "id": "orion-dust",
+   "name": "Orion Dust",
+   "scene": "nebula",
+   "mood": "dreamy, cosmic",
+   "palette": {
+    "bg": "#04030a",
+    "ink": "#ece9f5",
+    "muted": "#8f8aa3",
+    "accent": "#ff9ec7",
+    "glow": "#ff6fae",
+    "cool": "#5d7bff"
+   },
+   "contrast": {
+    "ink": 17.2,
+    "muted": 6.2,
+    "accent": 10.7
+   }
+  },
+  {
+   "id": "carina",
+   "name": "Carina",
+   "scene": "nebula",
+   "mood": "Hubble, teal-amber",
+   "palette": {
+    "bg": "#020506",
+    "ink": "#e7f1ef",
+    "muted": "#86958f",
+    "accent": "#ffc27a",
+    "glow": "#ff9440",
+    "cool": "#2fb8b0"
+   },
+   "contrast": {
+    "ink": 17.7,
+    "muted": 6.5,
+    "accent": 12.9
+   }
+  },
+  {
+   "id": "pillars",
+   "name": "Pillars",
+   "scene": "nebula",
+   "mood": "Webb, ochre",
+   "palette": {
+    "bg": "#050403",
+    "ink": "#f3ece2",
+    "muted": "#998f82",
+    "accent": "#e9b277",
+    "glow": "#d9823b",
+    "cool": "#4f8fbf"
+   },
+   "contrast": {
+    "ink": 17.5,
+    "muted": 6.4,
+    "accent": 10.8
+   }
+  },
+  {
+   "id": "helix",
+   "name": "Helix",
+   "scene": "nebula",
+   "mood": "eye, cyan-red",
+   "palette": {
+    "bg": "#03050a",
+    "ink": "#e6eef6",
+    "muted": "#8592a1",
+    "accent": "#7fd8ff",
+    "glow": "#ff5b4a",
+    "cool": "#38c6ff"
+   },
+   "contrast": {
+    "ink": 17.4,
+    "muted": 6.4,
+    "accent": 12.8
+   }
+  },
+  {
+   "id": "chrome",
+   "name": "Chrome",
+   "scene": "liquid",
+   "mood": "metallic, product",
+   "palette": {
+    "bg": "#050506",
+    "ink": "#efefef",
+    "muted": "#8f8f93",
+    "accent": "#d8dde6",
+    "glow": "#c7cfdb",
+    "cool": "#5c6b85"
+   },
+   "contrast": {
+    "ink": 17.7,
+    "muted": 6.3,
+    "accent": 14.9
+   }
+  },
+  {
+   "id": "acid",
+   "name": "Acid",
+   "scene": "liquid",
+   "mood": "rave, lime",
+   "palette": {
+    "bg": "#050604",
+    "ink": "#eef5e6",
+    "muted": "#8f9884",
+    "accent": "#c6ff4d",
+    "glow": "#a6ff00",
+    "cool": "#3a5cff"
+   },
+   "contrast": {
+    "ink": 18.2,
+    "muted": 6.8,
+    "accent": 17.2
+   }
+  },
+  {
+   "id": "mercury-rose",
+   "name": "Mercury Rose",
+   "scene": "liquid",
+   "mood": "fashion, soft",
+   "palette": {
+    "bg": "#070506",
+    "ink": "#f6ecef",
+    "muted": "#9b8c91",
+    "accent": "#ffb7c9",
+    "glow": "#ff8fb1",
+    "cool": "#7d8bd6"
+   },
+   "contrast": {
+    "ink": 17.6,
+    "muted": 6.3,
+    "accent": 12.5
+   }
+  },
+  {
+   "id": "deep-sea",
+   "name": "Deep Sea",
+   "scene": "liquid",
+   "mood": "ocean, calm",
+   "palette": {
+    "bg": "#01060a",
+    "ink": "#e4f2f5",
+    "muted": "#81979c",
+    "accent": "#5fe0d0",
+    "glow": "#1fd1c0",
+    "cool": "#1e3fa8"
+   },
+   "contrast": {
+    "ink": 17.8,
+    "muted": 6.6,
+    "accent": 12.7
+   }
+  },
+  {
+   "id": "lava",
+   "name": "Lava",
+   "scene": "liquid",
+   "mood": "hot, bold",
+   "palette": {
+    "bg": "#070302",
+    "ink": "#f7ebe3",
+    "muted": "#9c8b80",
+    "accent": "#ff8a3d",
+    "glow": "#ff4d00",
+    "cool": "#3b2a8f"
+   },
+   "contrast": {
+    "ink": 17.5,
+    "muted": 6.3,
+    "accent": 8.8
+   }
+  },
+  {
+   "id": "iridescent",
+   "name": "Iridescent",
+   "scene": "orb",
+   "mood": "tech, futuristic",
+   "palette": {
+    "bg": "#04040a",
+    "ink": "#eceaf5",
+    "muted": "#8c89a1",
+    "accent": "#9fe6ff",
+    "glow": "#ff7ad9",
+    "cool": "#5aa9ff"
+   },
+   "contrast": {
+    "ink": 17.2,
+    "muted": 6.0,
+    "accent": 14.8
+   }
+  },
+  {
+   "id": "pearl",
+   "name": "Pearl",
+   "scene": "orb",
+   "mood": "luxury, soft",
+   "palette": {
+    "bg": "#070707",
+    "ink": "#f4f1ea",
+    "muted": "#98948b",
+    "accent": "#e8d7b4",
+    "glow": "#f0dcc0",
+    "cool": "#9db1d6"
+   },
+   "contrast": {
+    "ink": 17.9,
+    "muted": 6.7,
+    "accent": 14.2
+   }
+  },
+  {
+   "id": "emerald-orb",
+   "name": "Emerald Orb",
+   "scene": "orb",
+   "mood": "finance, trust",
+   "palette": {
+    "bg": "#020604",
+    "ink": "#e8f3ec",
+    "muted": "#86978c",
+    "accent": "#6ee7a8",
+    "glow": "#2fd38a",
+    "cool": "#4f6dff"
+   },
+   "contrast": {
+    "ink": 17.9,
+    "muted": 6.6,
+    "accent": 13.3
+   }
+  },
+  {
+   "id": "solar-orb",
+   "name": "Solar Orb",
+   "scene": "orb",
+   "mood": "energy",
+   "palette": {
+    "bg": "#060402",
+    "ink": "#f6efe4",
+    "muted": "#9a907f",
+    "accent": "#ffcf5c",
+    "glow": "#ff9f1c",
+    "cool": "#3f5fd9"
+   },
+   "contrast": {
+    "ink": 17.9,
+    "muted": 6.5,
+    "accent": 14.0
+   }
+  },
+  {
+   "id": "ultraviolet",
+   "name": "Ultraviolet",
+   "scene": "orb",
+   "mood": "music, night",
+   "palette": {
+    "bg": "#05030a",
+    "ink": "#efe9f8",
+    "muted": "#9187a5",
+    "accent": "#c9a2ff",
+    "glow": "#9b5cff",
+    "cool": "#2fd2ff"
+   },
+   "contrast": {
+    "ink": 17.3,
+    "muted": 6.1,
+    "accent": 9.9
+   }
+  },
+  {
+   "id": "polar-night",
+   "name": "Polar Night",
+   "scene": "aurora",
+   "mood": "silent, northern",
+   "palette": {
+    "bg": "#01030a",
+    "ink": "#e6eef7",
+    "muted": "#8592a3",
+    "accent": "#8fffd1",
+    "glow": "#b46bff",
+    "cool": "#2fe0a0"
+   },
+   "contrast": {
+    "ink": 17.6,
+    "muted": 6.5,
+    "accent": 17.1
+   }
+  },
+  {
+   "id": "borealis-teal",
+   "name": "Borealis Teal",
+   "scene": "aurora",
+   "mood": "calm, wellness",
+   "palette": {
+    "bg": "#010607",
+    "ink": "#e4f3f1",
+    "muted": "#839a96",
+    "accent": "#7ff5d9",
+    "glow": "#4fd1ff",
+    "cool": "#2cf59b"
+   },
+   "contrast": {
+    "ink": 17.8,
+    "muted": 6.8,
+    "accent": 15.5
+   }
+  },
+  {
+   "id": "magenta-sky",
+   "name": "Magenta Sky",
+   "scene": "aurora",
+   "mood": "bold, creative",
+   "palette": {
+    "bg": "#04020a",
+    "ink": "#f1e8f6",
+    "muted": "#958aa0",
+    "accent": "#ff8ad8",
+    "glow": "#ff4fd8",
+    "cool": "#3cf0b0"
+   },
+   "contrast": {
+    "ink": 17.3,
+    "muted": 6.3,
+    "accent": 9.7
+   }
+  },
+  {
+   "id": "arctic-dawn",
+   "name": "Arctic Dawn",
+   "scene": "aurora",
+   "mood": "fresh, clean",
+   "palette": {
+    "bg": "#03050a",
+    "ink": "#eaf0f7",
+    "muted": "#8994a3",
+    "accent": "#ffc38f",
+    "glow": "#ff9a6b",
+    "cool": "#4fe0c8"
+   },
+   "contrast": {
+    "ink": 17.8,
+    "muted": 6.6,
+    "accent": 13.1
+   }
+  },
+  {
+   "id": "golden-hour",
+   "name": "Golden Hour",
+   "scene": "terrain",
+   "mood": "warm, travel",
+   "palette": {
+    "bg": "#060403",
+    "ink": "#f5ede2",
+    "muted": "#9a8f80",
+    "accent": "#ffc069",
+    "glow": "#ff9a3c",
+    "cool": "#5c6fb5"
+   },
+   "contrast": {
+    "ink": 17.6,
+    "muted": 6.4,
+    "accent": 12.7
+   }
+  },
+  {
+   "id": "desert-dune",
+   "name": "Desert Dune",
+   "scene": "terrain",
+   "mood": "minimal, earthy",
+   "palette": {
+    "bg": "#070504",
+    "ink": "#f4ece1",
+    "muted": "#9a8e7f",
+    "accent": "#e7a86a",
+    "glow": "#f08a4b",
+    "cool": "#8a7cc2"
+   },
+   "contrast": {
+    "ink": 17.4,
+    "muted": 6.3,
+    "accent": 9.9
+   }
+  },
+  {
+   "id": "blue-hour",
+   "name": "Blue Hour",
+   "scene": "terrain",
+   "mood": "moody, alpine",
+   "palette": {
+    "bg": "#02040a",
+    "ink": "#e7edf6",
+    "muted": "#8791a2",
+    "accent": "#ffb38a",
+    "glow": "#ff8c66",
+    "cool": "#3a5bd9"
+   },
+   "contrast": {
+    "ink": 17.4,
+    "muted": 6.4,
+    "accent": 11.8
+   }
+  },
+  {
+   "id": "mars",
+   "name": "Mars",
+   "scene": "terrain",
+   "mood": "sci-fi, red planet",
+   "palette": {
+    "bg": "#060302",
+    "ink": "#f5e9e2",
+    "muted": "#9b8a80",
+    "accent": "#ff9466",
+    "glow": "#e8582c",
+    "cool": "#4a6a9a"
+   },
+   "contrast": {
+    "ink": 17.3,
+    "muted": 6.2,
+    "accent": 9.5
+   }
+  },
+  {
+   "id": "swiss-red",
+   "name": "Swiss Red",
+   "scene": "liquid",
+   "mood": "brutal, graphic",
+   "palette": {
+    "bg": "#0a0a0a",
+    "ink": "#f2f2f2",
+    "muted": "#8f8f8f",
+    "accent": "#ff3b30",
+    "glow": "#ff3b30",
+    "cool": "#2a2a2a"
+   },
+   "contrast": {
+    "ink": 17.7,
+    "muted": 6.1,
+    "accent": 5.6
+   }
+  },
+  {
+   "id": "terminal-green",
+   "name": "Terminal Green",
+   "scene": "liquid",
+   "mood": "hacker, retro",
+   "palette": {
+    "bg": "#020502",
+    "ink": "#d9f7d9",
+    "muted": "#7f9a7f",
+    "accent": "#4dff88",
+    "glow": "#33ff66",
+    "cool": "#0f3d1f"
+   },
+   "contrast": {
+    "ink": 17.8,
+    "muted": 6.7,
+    "accent": 15.6
+   }
+  },
+  {
+   "id": "amber-crt",
+   "name": "Amber CRT",
+   "scene": "nebula",
+   "mood": "retro computing",
+   "palette": {
+    "bg": "#050301",
+    "ink": "#ffe9c7",
+    "muted": "#a08b6a",
+    "accent": "#ffb000",
+    "glow": "#ff8c00",
+    "cool": "#3d2a10"
+   },
+   "contrast": {
+    "ink": 17.4,
+    "muted": 6.3,
+    "accent": 11.2
+   }
+  },
+  {
+   "id": "paper-ink",
+   "name": "Paper & Ink (dark)",
+   "scene": "orb",
+   "mood": "editorial",
+   "palette": {
+    "bg": "#0b0a09",
+    "ink": "#efe8dc",
+    "muted": "#9a9285",
+    "accent": "#d9b38c",
+    "glow": "#c99a6b",
+    "cool": "#5a6a80"
+   },
+   "contrast": {
+    "ink": 16.2,
+    "muted": 6.4,
+    "accent": 10.2
+   }
+  },
+  {
+   "id": "noir-gold",
+   "name": "Noir Gold",
+   "scene": "orb",
+   "mood": "luxury, watches",
+   "palette": {
+    "bg": "#050505",
+    "ink": "#efe9dd",
+    "muted": "#968f82",
+    "accent": "#d4af6a",
+    "glow": "#e0b45c",
+    "cool": "#4a5260"
+   },
+   "contrast": {
+    "ink": 16.9,
+    "muted": 6.4,
+    "accent": 9.8
+   }
+  },
+  {
+   "id": "cyber-pink",
+   "name": "Cyber Pink",
+   "scene": "liquid",
+   "mood": "gaming, energy",
+   "palette": {
+    "bg": "#06020a",
+    "ink": "#f6e8f5",
+    "muted": "#9a8a9b",
+    "accent": "#ff4fb8",
+    "glow": "#ff2d95",
+    "cool": "#00e5ff"
+   },
+   "contrast": {
+    "ink": 17.4,
+    "muted": 6.4,
+    "accent": 6.9
+   }
+  },
+  {
+   "id": "matcha",
+   "name": "Matcha",
+   "scene": "terrain",
+   "mood": "organic, food",
+   "palette": {
+    "bg": "#040603",
+    "ink": "#eef2e6",
+    "muted": "#8f9884",
+    "accent": "#b9e07a",
+    "glow": "#9bd14a",
+    "cool": "#c9875a"
+   },
+   "contrast": {
+    "ink": 17.9,
+    "muted": 6.8,
+    "accent": 13.6
+   }
+  },
+  {
+   "id": "ocean-floor",
+   "name": "Ocean Floor",
+   "scene": "nebula",
+   "mood": "dive, mystery",
+   "palette": {
+    "bg": "#000508",
+    "ink": "#e2f1f6",
+    "muted": "#80959d",
+    "accent": "#5fd4ff",
+    "glow": "#00b3ff",
+    "cool": "#00ffa8"
+   },
+   "contrast": {
+    "ink": 17.7,
+    "muted": 6.5,
+    "accent": 12.0
+   }
+  },
+  {
+   "id": "ember",
+   "name": "Ember",
+   "scene": "blackhole",
+   "mood": "fire, intense",
+   "palette": {
+    "bg": "#060201",
+    "ink": "#f7ebe2",
+    "muted": "#9c8a7e",
+    "accent": "#ff9a4d",
+    "glow": "#ff5a1f",
+    "cool": "#7a3cff"
+   },
+   "contrast": {
+    "ink": 17.6,
+    "muted": 6.2,
+    "accent": 9.8
+   }
+  },
+  {
+   "id": "ice",
+   "name": "Ice",
+   "scene": "orb",
+   "mood": "clean, medical",
+   "palette": {
+    "bg": "#03060a",
+    "ink": "#eaf2fa",
+    "muted": "#8894a3",
+    "accent": "#a8e0ff",
+    "glow": "#d6f1ff",
+    "cool": "#4c7dff"
+   },
+   "contrast": {
+    "ink": 18.0,
+    "muted": 6.6,
+    "accent": 14.3
+   }
+  },
+  {
+   "id": "sakura",
+   "name": "Sakura",
+   "scene": "aurora",
+   "mood": "japanese, gentle",
+   "palette": {
+    "bg": "#07040a",
+    "ink": "#f6edf2",
+    "muted": "#9c8e96",
+    "accent": "#ffb3d1",
+    "glow": "#ff8fbf",
+    "cool": "#9ad7ff"
+   },
+   "contrast": {
+    "ink": 17.8,
+    "muted": 6.5,
+    "accent": 12.2
+   }
+  },
+  {
+   "id": "royal",
+   "name": "Royal",
+   "scene": "nebula",
+   "mood": "premium, deep blue",
+   "palette": {
+    "bg": "#02030c",
+    "ink": "#e8ebf7",
+    "muted": "#8a8fa6",
+    "accent": "#c9a65b",
+    "glow": "#e6c06a",
+    "cool": "#2e47c9"
+   },
+   "contrast": {
+    "ink": 17.3,
+    "muted": 6.4,
+    "accent": 8.9
+   }
+  },
+  {
+   "id": "forest",
+   "name": "Forest",
+   "scene": "terrain",
+   "mood": "nature, calm",
+   "palette": {
+    "bg": "#020503",
+    "ink": "#e7f0e8",
+    "muted": "#86978a",
+    "accent": "#9fd98f",
+    "glow": "#ffd27a",
+    "cool": "#3f8f6b"
+   },
+   "contrast": {
+    "ink": 17.6,
+    "muted": 6.6,
+    "accent": 12.5
+   }
+  },
+  {
+   "id": "mono",
+   "name": "Mono",
+   "scene": "orb",
+   "mood": "pure minimal",
+   "palette": {
+    "bg": "#000000",
+    "ink": "#f0f0f0",
+    "muted": "#8c8c8c",
+    "accent": "#ffffff",
+    "glow": "#e6e6e6",
+    "cool": "#5a5a5a"
+   },
+   "contrast": {
+    "ink": 18.4,
+    "muted": 6.2,
+    "accent": 21.0
+   }
+  }
+ ]
+}
