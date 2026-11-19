@@ -33,5 +33,5 @@ Immutable long cache for fonts/hashed assets; short + stale-while-revalidate for
 sw.js on every deploy** that changes files.
 
 ## 5. Measure
-Chrome DevTools Performance (4× CPU, Fast 4G) · Lighthouse (mobile) · `window.__omni.scale` (dynamic res level) and
-`__omni.compileMs` · WebPageTest for real devices · `python scripts/check.py site` for size budgets.
+Chrome DevTools Performance (4× CPU, Fast 4G) · Lighthouse (mobile) · `window.__ultra.scale` (dynamic res level) and
+`__ultra.compileMs` · WebPageTest for real devices · `python scripts/check.py site` for size budgets.

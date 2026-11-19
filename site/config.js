@@ -1,5 +1,5 @@
 // ═════════════════════════════════════════════════════════════════════════════
-//  OMNI FORGE — the ONE file you (or your AI) edit to make this site yours.
+//  ULTRA FORGE — the ONE file you (or your AI) edit to make this site yours.
 //  Everything visible — name, colours, 3D scene, sections, HUD, SEO — comes from here.
 //  After editing: open index.html via a local server (python -m http.server 8080).
 // ═════════════════════════════════════════════════════════════════════════════

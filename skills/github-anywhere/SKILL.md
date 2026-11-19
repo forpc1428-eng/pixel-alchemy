@@ -7,8 +7,8 @@ description: Creating GitHub repos and uploading/updating projects from anywhere
 
 **Golden rule:** never commit secrets (`.env`, keystores, tokens). The repo `.gitignore` already blocks common ones.
 
-## A. Start a new project from Omni Forge (any device, 30 seconds)
-On the Omni Forge repo page: **Use this template → Create a new repository** (or **Fork**). Name it, Public/Private,
+## A. Start a new project from Ultra Forge (any device, 30 seconds)
+On the Ultra Forge repo page: **Use this template → Create a new repository** (or **Fork**). Name it, Public/Private,
 Create. Then enable Pages (Settings → Pages → Source: GitHub Actions). Edit `site/config.js` in the browser
 (press `.` on desktop to open github.dev, or the ✏️ pencil on mobile) → **Commit changes** → site deploys automatically.
 *(If "Use this template" isn't shown, the owner must tick Settings → General → Template repository.)*
@@ -45,10 +45,10 @@ Source Control panel → Initialize → Publish to GitHub (signs in through the 
    ```bash
    pkg update && pkg install git gh unzip
    termux-setup-storage                       # gives access to /sdcard (Downloads)
-   cd ~ && unzip /sdcard/Download/omni-forge.zip -d omni-forge && cd omni-forge
+   cd ~ && unzip /sdcard/Download/ultra-forge.zip -d ultra-forge && cd ultra-forge
    gh auth login                              # choose HTTPS + browser/device code
    git init -b main && git add . && git commit -m "Initial commit"
-   gh repo create omni-forge --public --source=. --push
+   gh repo create ultra-forge --public --source=. --push
    ```
 3. **GitHub Codespaces** in Chrome: repo → Code → Codespaces → Create — a full VS Code + terminal in the cloud
    (free monthly hours). Run `python -m http.server 8080` and open the forwarded port to preview.

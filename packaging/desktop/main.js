@@ -1,4 +1,4 @@
-// Electron main process: opens the Omni Forge site (copied into ./app) as a desktop app.
+// Electron main process: opens the Ultra Forge site (copied into ./app) as a desktop app.
 const { app, BrowserWindow, shell, Menu } = require('electron');
 const path = require('path');
 

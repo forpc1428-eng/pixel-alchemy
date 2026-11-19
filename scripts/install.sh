@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
-# Omni Forge installer — macOS / Linux / Git Bash / WSL / Termux
+# Ultra Forge installer — macOS / Linux / Git Bash / WSL / Termux
 #   ./scripts/install.sh                 Claude Code skills, global  (~/.claude/skills)
-#   ./scripts/install.sh --project [DIR] Make DIR (default: current dir) Omni-Forge-ready for EVERY AI tool:
+#   ./scripts/install.sh --project [DIR] Make DIR (default: current dir) Ultra-Forge-ready for EVERY AI tool:
 #                                        .claude/skills + AGENTS.md + CLAUDE.md + GEMINI.md + .cursor/rules +
-#                                        .github/copilot-instructions.md + .windsurfrules + omni-forge/ (skills, library, template)
+#                                        .github/copilot-instructions.md + .windsurfrules + ultra-forge/ (skills, library, template)
 #   ./scripts/install.sh --codex         also copy skills to ~/.codex/skills
 #   ./scripts/install.sh --dir PATH      copy skills to any folder your AI tool reads
 #   ./scripts/install.sh --template DIR  copy the website template (site/) into DIR
@@ -22,18 +22,18 @@ while [ $# -gt 0 ]; do
 done
 copy_skills() { mkdir -p "$1"; for s in "$HERE"/skills/*/; do rm -rf "$1/$(basename "$s")"; cp -R "$s" "$1/"; done; echo "  ✓ $(ls "$HERE/skills" | wc -l | tr -d ' ') skills → $1"; }
 
-echo "Omni Forge installer"
+echo "Ultra Forge installer"
 if [ "$GLOBAL" = 1 ]; then copy_skills "$HOME/.claude/skills"; fi
 if [ "$CODEX" = 1 ]; then copy_skills "$HOME/.codex/skills"; fi
 if [ -n "$EXTRA" ]; then copy_skills "$EXTRA"; fi
 if [ -n "$PROJECT" ]; then
   mkdir -p "$PROJECT"; cd "$PROJECT"
   copy_skills "$PROJECT/.claude/skills"
-  mkdir -p omni-forge && cp -R "$HERE/skills" "$HERE/library" omni-forge/ && cp "$HERE/MASTER_PROMPT.md" "$HERE/START_HERE.md" omni-forge/
+  mkdir -p ultra-forge && cp -R "$HERE/skills" "$HERE/library" ultra-forge/ && cp "$HERE/MASTER_PROMPT.md" "$HERE/START_HERE.md" ultra-forge/
   [ -d site ] || cp -R "$HERE/site" site
   for f in AGENTS.md CLAUDE.md GEMINI.md .windsurfrules; do [ -e "$f" ] || cp "$HERE/$f" "$f"; done
   mkdir -p .cursor/rules .github/workflows scripts packaging
-  cp "$HERE/.cursor/rules/omni-forge.mdc" .cursor/rules/
+  cp "$HERE/.cursor/rules/ultra-forge.mdc" .cursor/rules/
   [ -e .github/copilot-instructions.md ] || cp "$HERE/.github/copilot-instructions.md" .github/
   for w in "$HERE"/.github/workflows/*.yml; do [ -e ".github/workflows/$(basename "$w")" ] || cp "$w" .github/workflows/; done
   cp -n "$HERE"/scripts/* scripts/ 2>/dev/null || true

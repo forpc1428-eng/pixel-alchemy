@@ -1,11 +1,11 @@
 ---
 name: webgl-3d
-description: Real-time 3D for the web at award level — the Omni Engine (zero-dependency WebGL2 full-screen shader scenes), writing new raymarched/procedural scenes, Three.js and React Three Fiber setup, glTF models, PBR lighting, post-processing, tone mapping, dynamic resolution and fallbacks. Use for any 3D, WebGL, shader, Three.js, R3F, model viewer, product configurator, particles, or "super high graphics" request.
+description: Real-time 3D for the web at award level — the Ultra Engine (zero-dependency WebGL2 full-screen shader scenes), writing new raymarched/procedural scenes, Three.js and React Three Fiber setup, glTF models, PBR lighting, post-processing, tone mapping, dynamic resolution and fallbacks. Use for any 3D, WebGL, shader, Three.js, R3F, model viewer, product configurator, particles, or "super high graphics" request.
 ---
 
 # WebGL & 3D
 
-## 1. Omni Engine (template `site/js/engine.js`)
+## 1. Ultra Engine (template `site/js/engine.js`)
 
 - One full-screen triangle; the fragment shader = `HEAD` (noise, fbm, ACES, stars, vignette, dither) + one scene.
 - Uniforms: `uRes uTime uP(scroll 0..1, spring-smoothed) uMouse uShift(vec2 framing) uZoom uDim uBg uGlow uCool uAccent`.

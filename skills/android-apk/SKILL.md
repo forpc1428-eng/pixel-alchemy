@@ -1,6 +1,6 @@
 ---
 name: android-apk
-description: Turning any Omni Forge website or web app into an installable Android app — PWA install, Capacitor-wrapped APK/AAB built automatically by GitHub Actions (works from a phone), app icons/splash, signing keystores, Play Store upload, and TWA alternative. Use when the user asks for an APK, Android app, mobile app, Play Store, "install on my phone", or app from a website.
+description: Turning any Ultra Forge website or web app into an installable Android app — PWA install, Capacitor-wrapped APK/AAB built automatically by GitHub Actions (works from a phone), app icons/splash, signing keystores, Play Store upload, and TWA alternative. Use when the user asks for an APK, Android app, mobile app, Play Store, "install on my phone", or app from a website.
 ---
 
 # Android APK
@@ -16,7 +16,7 @@ Files: `packaging/android/` (package.json, capacitor.config.json) + `.github/wor
 
 1. Push the repo to GitHub (see `github-anywhere` — works from phone).
 2. GitHub → **Actions → Build Android APK → Run workflow** (or push a tag `v1.0.0`).
-3. ~6–10 min later: open the run → **Artifacts → omni-android-apk** → download → unzip → install `app-debug.apk`
+3. ~6–10 min later: open the run → **Artifacts → ultra-android-apk** → download → unzip → install `app-debug.apk`
    (allow "Install unknown apps" for your browser/Files app). Tags also attach the APK to a GitHub **Release**.
 
 What the workflow does: copies `site/` → `packaging/android/www`, `npm install`, `npx cap add android`, generates icons
@@ -28,7 +28,7 @@ Edit app name/id in `packaging/android/capacitor.config.json` (`appId` must be u
 ### Signed release (Play Store)
 Create a keystore once (PC or Termux):
 ```bash
-keytool -genkey -v -keystore release.jks -alias omni -keyalg RSA -keysize 2048 -validity 10000
+keytool -genkey -v -keystore release.jks -alias ultra -keyalg RSA -keysize 2048 -validity 10000
 base64 -w0 release.jks > release.jks.b64     # macOS: base64 -i release.jks
 ```
 Add repo secrets: `ANDROID_KEYSTORE_BASE64`, `ANDROID_KEYSTORE_PASSWORD`, `ANDROID_KEY_ALIAS`, `ANDROID_KEY_PASSWORD`.

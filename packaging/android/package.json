@@ -1,5 +1,5 @@
 {
-  "name": "omni-forge-android",
+  "name": "ultra-forge-android",
   "version": "1.0.0",
   "private": true,
   "description": "Wraps ../../site into an Android app with Capacitor. Built by .github/workflows/android-apk.yml",

@@ -1,6 +1,6 @@
 ---
 name: quality-gate
-description: Final verification for every Omni Forge build — automated checks (scripts/check.py), screenshots at multiple scroll points on desktop and phone, correctness, visual quality, motion continuity, framing, accessibility, performance numbers, packaging, licences, secrets and an honest hand-off. Use at the end of every build or change and whenever asked "is it perfect / ready / check everything".
+description: Final verification for every Ultra Forge build — automated checks (scripts/check.py), screenshots at multiple scroll points on desktop and phone, correctness, visual quality, motion continuity, framing, accessibility, performance numbers, packaging, licences, secrets and an honest hand-off. Use at the end of every build or change and whenever asked "is it perfect / ready / check everything".
 ---
 
 # Quality gate — nothing ships until every box is ticked
@@ -8,7 +8,7 @@ description: Final verification for every Omni Forge build — automated checks 
 Run `python scripts/check.py site` (or your project folder) first; fix every FAIL and WARN you can.
 
 ## A. Correctness
-- [ ] Zero console errors/warnings from your code; no shader errors (`window.__omni.failed === false`).
+- [ ] Zero console errors/warnings from your code; no shader errors (`window.__ultra.failed === false`).
 - [ ] Every JSON/YAML/config parses; every local file referenced exists (check.py).
 - [ ] Works from `http://localhost`, from the deployed URL, and (for APK/desktop) from `file://`.
 - [ ] No placeholder left silently — list remaining ones in the hand-off.

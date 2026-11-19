@@ -1,5 +1,5 @@
 /* ═════════════════════════════════════════════════════════════════════════════
-   OMNI FORGE — page orchestration. Reads window.FORGE (config.js), builds the DOM,
+   ULTRA FORGE — page orchestration. Reads window.FORGE (config.js), builds the DOM,
    drives the 3D engine from scroll, and runs every micro-interaction.
    You rarely need to edit this file — edit config.js instead.
    ═══════════════════════════════════════════════════════════════════════════ */
@@ -115,15 +115,15 @@
   const shiftFor = () => portrait() ? [0, 0.2] : [0.28, 0.02];
   const zoomFor = () => portrait() ? 1.45 : 1;
   let engine = null;
-  if (level >= 300 && window.OmniEngine) {
-    try { engine = OmniEngine.create(canvas, { scene, palette: pal, mobile: MOBILE, reduced, shift: shiftFor(), zoom: zoomFor(), preserve: qs.has('shot') }); } catch (e) { console.error(e); }
+  if (level >= 300 && window.UltraEngine) {
+    try { engine = UltraEngine.create(canvas, { scene, palette: pal, mobile: MOBILE, reduced, shift: shiftFor(), zoom: zoomFor(), preserve: qs.has('shot') }); } catch (e) { console.error(e); }
   }
   if (engine) {
     goal = 70;
     engine.onfail = () => { root.classList.add('no-webgl'); reveal(); };
     engine.onFirstFrame(() => { (document.fonts ? document.fonts.ready : Promise.resolve()).then(reveal); });
     engine.start();
-    window.__omni = engine;
+    window.__ultra = engine;
     addEventListener('resize', () => engine.setShift(shiftFor(), zoomFor()));
   } else { root.classList.add('no-webgl'); (document.fonts ? document.fonts.ready : Promise.resolve()).then(reveal); }
 

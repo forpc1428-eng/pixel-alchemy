@@ -1,6 +1,6 @@
 {
-  "appId": "com.omniforge.app",
-  "appName": "Omni Forge",
+  "appId": "com.ultraforge.app",
+  "appName": "Ultra Forge",
   "webDir": "www",
   "backgroundColor": "#000000",
   "android": {

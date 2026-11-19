@@ -1,9 +1,9 @@
 {
-  "name": "omni-forge",
+  "name": "ultra-forge",
   "owner": { "name": "forpc1428-eng" },
   "plugins": [
     {
-      "name": "omni-forge",
+      "name": "ultra-forge",
       "source": "./",
       "description": "Build cinematic websites, web apps, Android APKs, desktop software, 3D scenes and animations at Ultra Level 1000 — design to deploy."
     }

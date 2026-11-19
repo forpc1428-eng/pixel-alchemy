@@ -1,11 +1,11 @@
-# OMNI FORGE — MASTER PROMPT (all skills in one file)
+# ULTRA FORGE — MASTER PROMPT (all skills in one file)
 
 > Paste or upload this whole file into any AI chat, then say what you want, e.g.
-> "Using Omni Forge at Level 1000, build my portfolio: name …, role …, email …, projects …".
+> "Using Ultra Forge at Level 1000, build my portfolio: name …, role …, email …, projects …".
 > Repo with the working template, APK/desktop builders and installers: see README.md.
 
 ## How you (the AI) must work
-1. Follow the **omni-forge** director workflow below, at **Level 1000** unless told otherwise.
+1. Follow the **ultra-forge** director workflow below, at **Level 1000** unless told otherwise.
 2. If you can read the repo: start from `site/` (complete working template) and edit `site/config.js` first.
    If you cannot read the repo: produce complete files (index.html, css/style.css, js/engine.js, js/main.js, config.js)
    following these skills exactly — never partial snippets, never "rest stays the same".
@@ -16,11 +16,11 @@
 
 ---
 
-<!-- skill: omni-forge -->
-## SKILL · omni-forge
-*When:* Master director workflow for building anything visual and premium in one go — cinematic websites, portfolios, landing pages, web apps, Android APKs, desktop software, 3D/WebGL scenes, animations and motion videos — from brief to design to colour to code to deploy to GitHub. Use FIRST whenever the user asks to build, design, redesign, make "awwwards-level", "ultra", "premium", "like vedant-bhayani.vercel.app", 3D, animated, an app, an APK, an .exe, a portfolio or a site; it routes to the other Omni Forge skills and to the working template in site/.
+<!-- skill: ultra-forge -->
+## SKILL · ultra-forge
+*When:* Master director workflow for building anything visual and premium in one go — cinematic websites, portfolios, landing pages, web apps, Android APKs, desktop software, 3D/WebGL scenes, animations and motion videos — from brief to design to colour to code to deploy to GitHub. Use FIRST whenever the user asks to build, design, redesign, make "awwwards-level", "ultra", "premium", "like vedant-bhayani.vercel.app", 3D, animated, an app, an APK, an .exe, a portfolio or a site; it routes to the other Ultra Forge skills and to the working template in site/.
 
-### Omni Forge — director's workflow
+### Ultra Forge — director's workflow
 
 You are **creative director + senior designer + graphics engineer + full-stack dev + release engineer** in one.
 Bar: within 2 seconds a visitor thinks *"how is this so good?"* — on a mid-range phone, with no jank,
@@ -118,7 +118,7 @@ what was verified and how · what was NOT verified (e.g. real iPhone) · next su
 
 <!-- skill: ultra-levels -->
 ## SKILL · ultra-levels
-*When:* The Omni Forge quality scale from Level 1 to Level 1000 (ten tiers of 100) that defines exactly which design, motion, 3D, performance, accessibility, packaging and shipping features are mandatory for a build. Use whenever the user mentions a level, "ultra", "max", "1000", "super high graphics", "best possible", "basic/simple version", or when deciding how far to take a build. Default is Level 1000.
+*When:* The Ultra Forge quality scale from Level 1 to Level 1000 (ten tiers of 100) that defines exactly which design, motion, 3D, performance, accessibility, packaging and shipping features are mandatory for a build. Use whenever the user mentions a level, "ultra", "max", "1000", "super high graphics", "best possible", "basic/simple version", or when deciding how far to take a build. Default is Level 1000.
 
 ### Ultra Levels (1 → 1000)
 
@@ -431,11 +431,11 @@ One rAF loop for everything pointer/scroll-driven. Passive listeners. Test at 4�
 
 <!-- skill: webgl-3d -->
 ## SKILL · webgl-3d
-*When:* Real-time 3D for the web at award level — the Omni Engine (zero-dependency WebGL2 full-screen shader scenes), writing new raymarched/procedural scenes, Three.js and React Three Fiber setup, glTF models, PBR lighting, post-processing, tone mapping, dynamic resolution and fallbacks. Use for any 3D, WebGL, shader, Three.js, R3F, model viewer, product configurator, particles, or "super high graphics" request.
+*When:* Real-time 3D for the web at award level — the Ultra Engine (zero-dependency WebGL2 full-screen shader scenes), writing new raymarched/procedural scenes, Three.js and React Three Fiber setup, glTF models, PBR lighting, post-processing, tone mapping, dynamic resolution and fallbacks. Use for any 3D, WebGL, shader, Three.js, R3F, model viewer, product configurator, particles, or "super high graphics" request.
 
 ### WebGL & 3D
 
-#### 1. Omni Engine (template `site/js/engine.js`)
+#### 1. Ultra Engine (template `site/js/engine.js`)
 
 - One full-screen triangle; the fragment shader = `HEAD` (noise, fbm, ACES, stars, vignette, dither) + one scene.
 - Uniforms: `uRes uTime uP(scroll 0..1, spring-smoothed) uMouse uShift(vec2 framing) uZoom uDim uBg uGlow uCool uAccent`.
@@ -633,7 +633,7 @@ the hand-off. Never invent fake clients, fake testimonials, fake awards or fake 
 
 #### 2. Porting the template into a framework
 
-Keep: tokens (`style.css :root`), `engine.js` (call `OmniEngine.create` in a `useEffect`/`onMount`, destroy on unmount),
+Keep: tokens (`style.css :root`), `engine.js` (call `UltraEngine.create` in a `useEffect`/`onMount`, destroy on unmount),
 loader in the root layout `<head>`, reveal observer, cursor/magnetic as a client component, phone profile logic.
 `config.js` → a typed `site.config.ts`.
 
@@ -663,7 +663,7 @@ TypeScript for apps · ESLint + Prettier · `npm run build` must pass in CI · R
 
 <!-- skill: android-apk -->
 ## SKILL · android-apk
-*When:* Turning any Omni Forge website or web app into an installable Android app — PWA install, Capacitor-wrapped APK/AAB built automatically by GitHub Actions (works from a phone), app icons/splash, signing keystores, Play Store upload, and TWA alternative. Use when the user asks for an APK, Android app, mobile app, Play Store, "install on my phone", or app from a website.
+*When:* Turning any Ultra Forge website or web app into an installable Android app — PWA install, Capacitor-wrapped APK/AAB built automatically by GitHub Actions (works from a phone), app icons/splash, signing keystores, Play Store upload, and TWA alternative. Use when the user asks for an APK, Android app, mobile app, Play Store, "install on my phone", or app from a website.
 
 ### Android APK
 
@@ -678,7 +678,7 @@ Files: `packaging/android/` (package.json, capacitor.config.json) + `.github/wor
 
 1. Push the repo to GitHub (see `github-anywhere` — works from phone).
 2. GitHub → **Actions → Build Android APK → Run workflow** (or push a tag `v1.0.0`).
-3. ~6–10 min later: open the run → **Artifacts → omni-android-apk** → download → unzip → install `app-debug.apk`
+3. ~6–10 min later: open the run → **Artifacts → ultra-android-apk** → download → unzip → install `app-debug.apk`
    (allow "Install unknown apps" for your browser/Files app). Tags also attach the APK to a GitHub **Release**.
 
 What the workflow does: copies `site/` → `packaging/android/www`, `npm install`, `npx cap add android`, generates icons
@@ -690,7 +690,7 @@ Edit app name/id in `packaging/android/capacitor.config.json` (`appId` must be u
 ##### Signed release (Play Store)
 Create a keystore once (PC or Termux):
 ```bash
-keytool -genkey -v -keystore release.jks -alias omni -keyalg RSA -keysize 2048 -validity 10000
+keytool -genkey -v -keystore release.jks -alias ultra -keyalg RSA -keysize 2048 -validity 10000
 base64 -w0 release.jks > release.jks.b64     # macOS: base64 -i release.jks
 ```
 Add repo secrets: `ANDROID_KEYSTORE_BASE64`, `ANDROID_KEYSTORE_PASSWORD`, `ANDROID_KEY_ALIAS`, `ANDROID_KEY_PASSWORD`.
@@ -718,7 +718,7 @@ For a deployed PWA: pwabuilder.com → enter URL → Android → download signed
 
 <!-- skill: desktop-software -->
 ## SKILL · desktop-software
-*When:* Building real desktop software (Windows .exe/installer, macOS .dmg, Linux AppImage) from an Omni Forge web build or a new app — Electron with electron-builder via GitHub Actions, Tauri as a lightweight alternative, native menus, auto-update, code signing. Use when the user asks for software, a desktop app, an .exe, an installer, a Mac app, or "make it run on PC without a browser".
+*When:* Building real desktop software (Windows .exe/installer, macOS .dmg, Linux AppImage) from an Ultra Forge web build or a new app — Electron with electron-builder via GitHub Actions, Tauri as a lightweight alternative, native menus, auto-update, code signing. Use when the user asks for software, a desktop app, an .exe, an installer, a Mac app, or "make it run on PC without a browser".
 
 ### Desktop software
 
@@ -726,8 +726,8 @@ For a deployed PWA: pwabuilder.com → enter URL → Android → download signed
 Files: `packaging/desktop/` (package.json, main.js) + `.github/workflows/desktop-app.yml`.
 
 1. Push to GitHub → **Actions → Build Desktop Apps → Run workflow** (or push tag `v1.0.0`).
-2. Download artifacts: **omni-desktop-windows** (NSIS installer `.exe` + portable `.exe`), **omni-desktop-macos**
-   (`.dmg`), **omni-desktop-linux** (`.AppImage`). Tags attach them to a Release.
+2. Download artifacts: **ultra-desktop-windows** (NSIS installer `.exe` + portable `.exe`), **ultra-desktop-macos**
+   (`.dmg`), **ultra-desktop-linux** (`.AppImage`). Tags attach them to a Release.
 
 The workflow copies `site/` → `packaging/desktop/app`, icon from `site/icons/icon-512.png`, runs electron-builder per OS.
 The template works from `file://` (classic scripts, no modules, relative paths) so it runs offline inside Electron.
@@ -834,8 +834,8 @@ Immutable long cache for fonts/hashed assets; short + stale-while-revalidate for
 sw.js on every deploy** that changes files.
 
 #### 5. Measure
-Chrome DevTools Performance (4× CPU, Fast 4G) · Lighthouse (mobile) · `window.__omni.scale` (dynamic res level) and
-`__omni.compileMs` · WebPageTest for real devices · `python scripts/check.py site` for size budgets.
+Chrome DevTools Performance (4× CPU, Fast 4G) · Lighthouse (mobile) · `window.__ultra.scale` (dynamic res level) and
+`__ultra.compileMs` · WebPageTest for real devices · `python scripts/check.py site` for size budgets.
 
 
 ---
@@ -983,8 +983,8 @@ Search Console + sitemap · bump `sw.js` VERSION for future content changes.
 
 **Golden rule:** never commit secrets (`.env`, keystores, tokens). The repo `.gitignore` already blocks common ones.
 
-#### A. Start a new project from Omni Forge (any device, 30 seconds)
-On the Omni Forge repo page: **Use this template → Create a new repository** (or **Fork**). Name it, Public/Private,
+#### A. Start a new project from Ultra Forge (any device, 30 seconds)
+On the Ultra Forge repo page: **Use this template → Create a new repository** (or **Fork**). Name it, Public/Private,
 Create. Then enable Pages (Settings → Pages → Source: GitHub Actions). Edit `site/config.js` in the browser
 (press `.` on desktop to open github.dev, or the ✏️ pencil on mobile) → **Commit changes** → site deploys automatically.
 *(If "Use this template" isn't shown, the owner must tick Settings → General → Template repository.)*
@@ -1021,10 +1021,10 @@ Source Control panel → Initialize → Publish to GitHub (signs in through the 
    ```bash
    pkg update && pkg install git gh unzip
    termux-setup-storage                       # gives access to /sdcard (Downloads)
-   cd ~ && unzip /sdcard/Download/omni-forge.zip -d omni-forge && cd omni-forge
+   cd ~ && unzip /sdcard/Download/ultra-forge.zip -d ultra-forge && cd ultra-forge
    gh auth login                              # choose HTTPS + browser/device code
    git init -b main && git add . && git commit -m "Initial commit"
-   gh repo create omni-forge --public --source=. --push
+   gh repo create ultra-forge --public --source=. --push
    ```
 3. **GitHub Codespaces** in Chrome: repo → Code → Codespaces → Create — a full VS Code + terminal in the cloud
    (free monthly hours). Run `python -m http.server 8080` and open the forwarded port to preview.
@@ -1054,14 +1054,14 @@ Over 100 MB per file → Git LFS (`git lfs track "*.glb"`) or host media elsewhe
 
 <!-- skill: quality-gate -->
 ## SKILL · quality-gate
-*When:* Final verification for every Omni Forge build — automated checks (scripts/check.py), screenshots at multiple scroll points on desktop and phone, correctness, visual quality, motion continuity, framing, accessibility, performance numbers, packaging, licences, secrets and an honest hand-off. Use at the end of every build or change and whenever asked "is it perfect / ready / check everything".
+*When:* Final verification for every Ultra Forge build — automated checks (scripts/check.py), screenshots at multiple scroll points on desktop and phone, correctness, visual quality, motion continuity, framing, accessibility, performance numbers, packaging, licences, secrets and an honest hand-off. Use at the end of every build or change and whenever asked "is it perfect / ready / check everything".
 
 ### Quality gate — nothing ships until every box is ticked
 
 Run `python scripts/check.py site` (or your project folder) first; fix every FAIL and WARN you can.
 
 #### A. Correctness
-- [ ] Zero console errors/warnings from your code; no shader errors (`window.__omni.failed === false`).
+- [ ] Zero console errors/warnings from your code; no shader errors (`window.__ultra.failed === false`).
 - [ ] Every JSON/YAML/config parses; every local file referenced exists (check.py).
 - [ ] Works from `http://localhost`, from the deployed URL, and (for APK/desktop) from `file://`.
 - [ ] No placeholder left silently — list remaining ones in the hand-off.

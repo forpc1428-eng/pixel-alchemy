@@ -1,6 +1,6 @@
 ---
 name: desktop-software
-description: Building real desktop software (Windows .exe/installer, macOS .dmg, Linux AppImage) from an Omni Forge web build or a new app — Electron with electron-builder via GitHub Actions, Tauri as a lightweight alternative, native menus, auto-update, code signing. Use when the user asks for software, a desktop app, an .exe, an installer, a Mac app, or "make it run on PC without a browser".
+description: Building real desktop software (Windows .exe/installer, macOS .dmg, Linux AppImage) from an Ultra Forge web build or a new app — Electron with electron-builder via GitHub Actions, Tauri as a lightweight alternative, native menus, auto-update, code signing. Use when the user asks for software, a desktop app, an .exe, an installer, a Mac app, or "make it run on PC without a browser".
 ---
 
 # Desktop software
@@ -9,8 +9,8 @@ description: Building real desktop software (Windows .exe/installer, macOS .dmg,
 Files: `packaging/desktop/` (package.json, main.js) + `.github/workflows/desktop-app.yml`.
 
 1. Push to GitHub → **Actions → Build Desktop Apps → Run workflow** (or push tag `v1.0.0`).
-2. Download artifacts: **omni-desktop-windows** (NSIS installer `.exe` + portable `.exe`), **omni-desktop-macos**
-   (`.dmg`), **omni-desktop-linux** (`.AppImage`). Tags attach them to a Release.
+2. Download artifacts: **ultra-desktop-windows** (NSIS installer `.exe` + portable `.exe`), **ultra-desktop-macos**
+   (`.dmg`), **ultra-desktop-linux** (`.AppImage`). Tags attach them to a Release.
 
 The workflow copies `site/` → `packaging/desktop/app`, icon from `site/icons/icon-512.png`, runs electron-builder per OS.
 The template works from `file://` (classic scripts, no modules, relative paths) so it runs offline inside Electron.

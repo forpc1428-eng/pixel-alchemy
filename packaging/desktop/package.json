@@ -1,6 +1,6 @@
 {
-  "name": "omni-forge-desktop",
-  "productName": "Omni Forge",
+  "name": "ultra-forge-desktop",
+  "productName": "Ultra Forge",
   "version": "1.0.0",
   "private": true,
   "description": "Desktop app wrapping ../../site. Built by .github/workflows/desktop-app.yml",
@@ -16,8 +16,8 @@
     "electron-builder": "^25.1.8"
   },
   "build": {
-    "appId": "com.omniforge.desktop",
-    "productName": "Omni Forge",
+    "appId": "com.ultraforge.desktop",
+    "productName": "Ultra Forge",
     "directories": { "output": "dist", "buildResources": "build" },
     "files": ["main.js", "app/**/*"],
     "win": { "target": ["nsis", "portable"] },

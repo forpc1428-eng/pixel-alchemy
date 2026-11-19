@@ -1,5 +1,5 @@
 // Offline-first service worker. Bump VERSION on every deploy that changes files.
-const VERSION = 'omni-v1';
+const VERSION = 'ultra-v1';
 const CORE = ['./', 'index.html', 'config.js', 'css/style.css', 'js/engine.js', 'js/main.js',
   'fonts/bodoni-moda-latin-400-normal.woff2', 'fonts/montserrat-latin-400-normal.woff2', 'fonts/montserrat-latin-500-normal.woff2',
   'manifest.webmanifest', 'icons/favicon.svg', 'icons/icon-192.png'];

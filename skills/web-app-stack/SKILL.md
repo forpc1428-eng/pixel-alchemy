@@ -19,7 +19,7 @@ description: Choosing and wiring the full technical stack for websites and web a
 
 ## 2. Porting the template into a framework
 
-Keep: tokens (`style.css :root`), `engine.js` (call `OmniEngine.create` in a `useEffect`/`onMount`, destroy on unmount),
+Keep: tokens (`style.css :root`), `engine.js` (call `UltraEngine.create` in a `useEffect`/`onMount`, destroy on unmount),
 loader in the root layout `<head>`, reveal observer, cursor/magnetic as a client component, phone profile logic.
 `config.js` → a typed `site.config.ts`.
 

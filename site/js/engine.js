@@ -1,5 +1,5 @@
 /* ═════════════════════════════════════════════════════════════════════════════
-   OMNI ENGINE — zero-dependency WebGL2 cinematic scene renderer.
+   ULTRA ENGINE — zero-dependency WebGL2 cinematic scene renderer.
    • 6 scenes (blackhole, nebula, orb, liquid, aurora, terrain), one compiled at a time
    • Scroll progress + pointer drive every scene; palette comes from config.js
    • Dynamic resolution (keeps ~60 fps), phone profile, reduced-motion, tab-pause
@@ -262,7 +262,7 @@ vec3 scene(vec2 uv,vec2 fc){
     function finishLink() {
       if (!gl.getProgramParameter(prog, gl.LINK_STATUS)) {
         failed = true;
-        console.error('[omni-engine] shader error:', gl.getShaderInfoLog(fs) || gl.getProgramInfoLog(prog));
+        console.error('[ultra-engine] shader error:', gl.getShaderInfoLog(fs) || gl.getProgramInfoLog(prog));
         return false;
       }
       gl.useProgram(prog);
@@ -337,5 +337,5 @@ vec3 scene(vec2 uv,vec2 fc){
     return api;
   }
 
-  window.OmniEngine = { create, scenes: Object.keys(SCENES) };
+  window.UltraEngine = { create, scenes: Object.keys(SCENES) };
 })();

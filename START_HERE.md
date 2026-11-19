@@ -4,7 +4,7 @@
 exactly what it says.** It works for Claude / Claude Code, ChatGPT / Codex, Gemini / Gemini CLI, Cursor, GitHub
 Copilot, Windsurf, Cline, Aider, Jules, Replit Agent, Bolt, Lovable, v0, DeepSeek, Grok and any other assistant.
 
-Repo: `https://github.com/forpc1428-eng/omni-forge`
+Repo: `https://github.com/forpc1428-eng/ultra-forge`
 (If this repo was copied/forked under another name, use that URL instead in every command below.)
 
 ---
@@ -13,10 +13,10 @@ Repo: `https://github.com/forpc1428-eng/omni-forge`
 
 | You are… | Do this |
 |---|---|
-| **Claude Code** (CLI / desktop / web) | `/plugin marketplace add forpc1428-eng/omni-forge` then `/plugin install omni-forge@omni-forge` — or run the shell line below |
-| **Any agent with a terminal** (Claude Code, Codex CLI, Gemini CLI, Aider, Cline, Cursor/Windsurf agent, Copilot agent, Replit…) | macOS/Linux/WSL/Termux: `git clone https://github.com/forpc1428-eng/omni-forge.git && cd omni-forge && ./scripts/install.sh --project .` · Windows: `git clone https://github.com/forpc1428-eng/omni-forge.git; cd omni-forge; powershell -ExecutionPolicy Bypass -File scripts\install.ps1 -Project -ProjectDir .` |
+| **Claude Code** (CLI / desktop / web) | `/plugin marketplace add forpc1428-eng/ultra-forge` then `/plugin install ultra-forge@ultra-forge` — or run the shell line below |
+| **Any agent with a terminal** (Claude Code, Codex CLI, Gemini CLI, Aider, Cline, Cursor/Windsurf agent, Copilot agent, Replit…) | macOS/Linux/WSL/Termux: `git clone https://github.com/forpc1428-eng/ultra-forge.git && cd ultra-forge && ./scripts/install.sh --project .` · Windows: `git clone https://github.com/forpc1428-eng/ultra-forge.git; cd ultra-forge; powershell -ExecutionPolicy Bypass -File scripts\install.ps1 -Project -ProjectDir .` |
 | **Agent working inside the user's existing project** | Clone this repo to a temp folder, then run `./scripts/install.sh --project /path/to/their/project` (adds `site/`, skills, AI rule files, workflows, packaging without overwriting their files) |
-| **Chat AI that can browse but not run commands** (ChatGPT, Gemini, Claude.ai, Grok, Perplexity…) | Read `MASTER_PROMPT.md` (raw: `https://raw.githubusercontent.com/forpc1428-eng/omni-forge/main/MASTER_PROMPT.md`) and the template files listed in `llms.txt`. Follow them. Output COMPLETE files. |
+| **Chat AI that can browse but not run commands** (ChatGPT, Gemini, Claude.ai, Grok, Perplexity…) | Read `MASTER_PROMPT.md` (raw: `https://raw.githubusercontent.com/forpc1428-eng/ultra-forge/main/MASTER_PROMPT.md`) and the template files listed in `llms.txt`. Follow them. Output COMPLETE files. |
 | **Chat AI with no browsing** | Ask the user to upload `MASTER_PROMPT.md` (and `site/` files if possible). |
 | **App builders** (Bolt, Lovable, v0, Replit) | Import the GitHub repo; treat `site/` as the app; follow `MASTER_PROMPT.md`. |
 
@@ -35,7 +35,7 @@ Tell the user in one line what you installed and where.
 
 ## STEP 2 — Build what the user asked
 
-1. Read `skills/omni-forge/SKILL.md` (director workflow) and `skills/ultra-levels/SKILL.md`. Default **Level 1000**.
+1. Read `skills/ultra-forge/SKILL.md` (director workflow) and `skills/ultra-levels/SKILL.md`. Default **Level 1000**.
 2. Read every other skill the job needs (all of them for a full site/app).
 3. Start from `site/`. Edit **`site/config.js`** first (name, role, email, palette, scene, sections, HUD, SEO).
    Scenes: `blackhole · nebula · orb · liquid · aurora · terrain`. Palettes: `library/palettes.json`. Styles: `library/styles.md`.

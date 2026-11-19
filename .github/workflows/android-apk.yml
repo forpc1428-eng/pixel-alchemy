@@ -58,13 +58,13 @@ jobs:
       - name: Collect outputs
         run: |
           mkdir -p out
-          cp android/app/build/outputs/apk/debug/app-debug.apk out/omni-forge-debug.apk
+          cp android/app/build/outputs/apk/debug/app-debug.apk out/ultra-forge-debug.apk
           cp android/app/build/outputs/apk/release/*.apk out/ 2>/dev/null || true
           cp android/app/build/outputs/bundle/release/*.aab out/ 2>/dev/null || true
           ls -la out
       - uses: actions/upload-artifact@v4
         with:
-          name: omni-android-apk
+          name: ultra-android-apk
           path: packaging/android/out/*
       - name: Attach to GitHub Release (tags only)
         if: startsWith(github.ref, 'refs/tags/')
